@@ -1,5 +1,9 @@
 # padel_tournement
 
-# TODO: 
+# TODO:
+
     - göra det mer skalbart
     - gå vidare till slutspel
+
+hej
+

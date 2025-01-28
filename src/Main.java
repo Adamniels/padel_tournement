@@ -1,4 +1,5 @@
-package src;
+
+import padel.Tournement;
 
 public class Main {
   private static void eventLoop(){

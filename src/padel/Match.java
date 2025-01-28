@@ -1,4 +1,4 @@
-package src;
+package padel;
 
 public class Match {
     Team team1;

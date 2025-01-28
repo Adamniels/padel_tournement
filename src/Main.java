@@ -2,33 +2,43 @@
 import padel.Tournement;
 
 public class Main {
-  private static void eventLoop(){
-    // create a tournement
-    Tournement tournement = new Tournement();
-    tournement.addTeam("team1", "a", "b");
-    tournement.addTeam("team2", "c", "d");
-    tournement.addTeam("team3", "e", "f");
-    tournement.addTeam("team4", "g", "h");
-
-    int teams = 4;
-    int matches = (teams*(teams-1))/2;
-    System.out.println("matches: " + matches);
-
-    tournement.startTournement();
-    for(int i = 0; i < matches/2; i++){
-      tournement.playNewMatches();
-      tournement.updateOngoingMatches();
-      tournement.printTeams();
+    private static int countRounds(int teams, int courts) {
+        int matches = (teams * (teams - 1)) / 2;
+        System.out.println("matches: " + matches);
+        int rounds = (int) ((matches / 2.0) + 0.5);
+        return rounds;
     }
-    System.out.println("RESULT PRELIMINARY ROUND:");
-    tournement.printTeams();
 
-    // starta slutspelet
-    
-  }
+    private static void eventLoop() {
+        // create a tournement
+        Tournement tournement = new Tournement();
+        tournement.addTeam("team1", "a", "b");
+        tournement.addTeam("team2", "c", "d");
+        tournement.addTeam("team3", "e", "f");
+        tournement.addTeam("team4", "g", "h");
+        // tournement.addTeam("team5", "i", "j");
+        // tournement.addTeam("team6", "k", "l");
 
-  public static void main(String[] args) {
-    System.out.println("PADEL TOURNEMENT");
-    eventLoop();
-  }
+        int teams = 4;
+        int courts = 2;
+
+        int rounds = countRounds(teams, courts);
+        System.out.println("rounds: " + rounds);
+        tournement.startTournement();
+        for (int i = 0; i < rounds; i++) {
+            tournement.playNewMatches();
+            // tournement.updateOngoingMatches();
+            // tournement.printStanding();
+        }
+        System.out.println("RESULT PRELIMINARY ROUND:");
+        tournement.printStanding();
+
+        // starta slutspelet
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println("PADEL TOURNEMENT");
+        eventLoop();
+    }
 }

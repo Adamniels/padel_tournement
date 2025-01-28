@@ -8,7 +8,7 @@ all:
 
 # Kör huvudprogrammet
 run: all
-	java -cp $(OUT_DIR) src.Main
+	java -cp $(OUT_DIR) Main
 
 # Rensa kompilerade filer
 clean:

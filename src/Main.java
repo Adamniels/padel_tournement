@@ -1,5 +1,8 @@
 
+import padel.Playoffs;
 import padel.Tournement;
+import padel.Team;
+import java.util.List;
 
 public class Main {
     private static int countRounds(int teams, int courts) {
@@ -34,6 +37,8 @@ public class Main {
         tournement.printStanding();
 
         // starta slutspelet
+        List<Team> standings = tournement.getStandings();
+        Playoffs playoffs = new Playoffs(standings);
 
     }
 

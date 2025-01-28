@@ -5,12 +5,10 @@ import java.util.*;
 public class Tournement {
     // Standings strukur
     List<Team> teams;
-    // array med alla matcher
     List<Match> playedMatches;
-    // array with ongoing matches
     List<Match> ongoingMatches;
-    // array med matcher som ska spelas
     List<Match> nextMatches;
+    Playoffs playoff;
 
     public Tournement() {
         // create a new standings object
@@ -107,19 +105,9 @@ public class Tournement {
         }
     }
 
-    // TODO: ta in om man vill köra kvart, semi eller final direkt
-    // för nu så hårdkodas det till semifinal
-    public void startPlayOff() {
+    public List<Team> getStandings() {
         Collections.sort(teams);
-        // NOTE: det är för nu här man kan justera om man vill ha semi, kvart eller så
-        // sen lägger man bara in matcherna i en lista och skicka in till mitt slutspels
-        // objekt
-        Match semi1 = new Match(teams.get(0), teams.get(3));
-        Match semi2 = new Match(teams.get(2), teams.get(2));
-        // TODO: kanske göra en slutspels klass som tar in om man börjar med semi, kvart
-        // eller så
-        // den kan innehålla final, brons, semi, och kvart
-
+        return teams;
     }
 
     public void printStanding() {

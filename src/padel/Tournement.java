@@ -34,6 +34,7 @@ public class Tournement {
                 // System.out.println("added match " + match);
             }
         }
+        Collections.shuffle(nextMatches);
     }
 
     // TODO: måste ta in en parameter med olka antal banor som finns tillgängliga
@@ -65,9 +66,10 @@ public class Tournement {
         }
     }
 
+    // TODO: hur kan jag göra detta så att det beror på hur många banor jag har
+    // tillgång till
     public void updateOngoingMatches() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("size of ongoing: " + ongoingMatches.size());
 
         for (int i = 0; i < ongoingMatches.size(); i++) {
             Match match = ongoingMatches.get(i);

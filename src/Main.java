@@ -116,7 +116,7 @@ public class Main {
         char ans = Utils.getAnswer("SR"); // TODO: ska lägga i ett library senare
         switch (ans) {
             case 'S':
-                // TODO: start a new Tournement
+                // start a new Tournement
                 tournementStarted = true;
                 tournement = new Tournement();
 

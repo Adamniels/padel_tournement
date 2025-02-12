@@ -1,6 +1,9 @@
 package padel;
 
 import java.util.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Preliminary implements TournementStage {
   List<Match> playedMatches;
@@ -96,6 +99,27 @@ public class Preliminary implements TournementStage {
     ongoingMatches.remove(0);
     if (!ongoingMatches.isEmpty()) {
       ongoingMatches.remove(0);
+    }
+  }
+
+  public void saveToFile(String filename) {
+    File file = new File(filename);
+
+    try {
+      // Skapa filen om den inte finns
+      if (!file.exists()) {
+        file.createNewFile();
+      }
+
+      // Skriv till filen
+      try (FileWriter writer = new FileWriter(file)) {
+        writer.write("hej");
+        System.out.println("Turneringen sparad till " + filename);
+      }
+
+    } catch (IOException e) {
+      System.err.println("Fel vid sparning av JSON: " + e.getMessage());
+      e.printStackTrace();
     }
   }
 

@@ -9,6 +9,7 @@
         så kan man bara köra dem med hjälp av den
 - [x] bygga litet bibliotek för att säkerställa input är korrekt
 
-- [ ] Kunna spara allting ifall man vill återuppta senare
+- [ongoing] Kunna spara allting ifall man vill återuppta senare
+  - [ ] kanske kolla på att parsea själv och bygga ett litet json bibliotek???
 - [ ] vill kunna köra 5 lag men verkar inte funka i nuläget, alla gånger iaf
 - [ ] göra det mer skalbart

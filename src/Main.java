@@ -36,7 +36,7 @@ public class Main {
     switch (ans) {
       case 'S':
         // start a new Tournement
-        tournement = new Tournement();
+        tournement = new Tournement("tournementName");
 
         // Here you can set the parameters for a new tournement
         tournement.addTeam("team1", "a", "b");
@@ -102,6 +102,7 @@ public class Main {
 
         case 'Q':
           tournementStarted = false;
+          tournement.saveTournement();
           break;
 
         default:

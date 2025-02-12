@@ -3,6 +3,7 @@ package padel;
 import java.util.*;
 
 public class Tournement {
+  String name;
   List<Team> teams;
   int courts;
   int roundsPlayed;
@@ -12,11 +13,11 @@ public class Tournement {
   int playoffRoundstotal;
   TournementStage tournementStage;
 
-  public Tournement() {
+  public Tournement(String name) {
+    this.name = name;
     teams = new ArrayList<>();
     playoffs = new Playoffs();
     preliminary = new Preliminary();
-    // NOTE: for now always start with preliminary
     tournementStage = preliminary;
     courts = 2;
 
@@ -100,6 +101,11 @@ public class Tournement {
     int playoffsRounds = (int) temp;
 
     return playoffsRounds;
+  }
+
+  public void saveTournement() {
+    String filepath = "src/savedTournaments/" + this.name + ".json";
+    preliminary.saveToFile(filepath);
   }
 
 }

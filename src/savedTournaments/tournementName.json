@@ -1,0 +1,127 @@
+{
+  "playedMatches": [
+    {
+      "team1": {
+        "teamName": "team3",
+        "member1": "e",
+        "member2": "f",
+        "playedMatches": 1,
+        "scoreDiff": -9,
+        "matchesWon": 0
+      },
+      "team2": {
+        "teamName": "team4",
+        "member1": "g",
+        "member2": "h",
+        "playedMatches": 1,
+        "scoreDiff": 9,
+        "matchesWon": 1
+      },
+      "team1pts": 23,
+      "team2pts": 32
+    },
+    {
+      "team1": {
+        "teamName": "team1",
+        "member1": "a",
+        "member2": "b",
+        "playedMatches": 1,
+        "scoreDiff": 19,
+        "matchesWon": 1
+      },
+      "team2": {
+        "teamName": "team2",
+        "member1": "c",
+        "member2": "d",
+        "playedMatches": 1,
+        "scoreDiff": -19,
+        "matchesWon": 0
+      },
+      "team1pts": 42,
+      "team2pts": 23
+    }
+  ],
+  "ongoingMatches": [],
+  "nextMatches": [
+    {
+      "team1": {
+        "teamName": "team2",
+        "member1": "c",
+        "member2": "d",
+        "playedMatches": 1,
+        "scoreDiff": -19,
+        "matchesWon": 0
+      },
+      "team2": {
+        "teamName": "team3",
+        "member1": "e",
+        "member2": "f",
+        "playedMatches": 1,
+        "scoreDiff": -9,
+        "matchesWon": 0
+      },
+      "team1pts": 0,
+      "team2pts": 0
+    },
+    {
+      "team1": {
+        "teamName": "team1",
+        "member1": "a",
+        "member2": "b",
+        "playedMatches": 1,
+        "scoreDiff": 19,
+        "matchesWon": 1
+      },
+      "team2": {
+        "teamName": "team3",
+        "member1": "e",
+        "member2": "f",
+        "playedMatches": 1,
+        "scoreDiff": -9,
+        "matchesWon": 0
+      },
+      "team1pts": 0,
+      "team2pts": 0
+    },
+    {
+      "team1": {
+        "teamName": "team2",
+        "member1": "c",
+        "member2": "d",
+        "playedMatches": 1,
+        "scoreDiff": -19,
+        "matchesWon": 0
+      },
+      "team2": {
+        "teamName": "team4",
+        "member1": "g",
+        "member2": "h",
+        "playedMatches": 1,
+        "scoreDiff": 9,
+        "matchesWon": 1
+      },
+      "team1pts": 0,
+      "team2pts": 0
+    },
+    {
+      "team1": {
+        "teamName": "team1",
+        "member1": "a",
+        "member2": "b",
+        "playedMatches": 1,
+        "scoreDiff": 19,
+        "matchesWon": 1
+      },
+      "team2": {
+        "teamName": "team4",
+        "member1": "g",
+        "member2": "h",
+        "playedMatches": 1,
+        "scoreDiff": 9,
+        "matchesWon": 1
+      },
+      "team1pts": 0,
+      "team2pts": 0
+    }
+  ]
+}

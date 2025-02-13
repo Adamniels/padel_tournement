@@ -1,5 +1,8 @@
 package padel;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.util.*;
 import java.io.File;
 import java.io.FileWriter;
@@ -103,6 +106,7 @@ public class Preliminary implements TournementStage {
   }
 
   public void saveToFile(String filename) {
+    Gson gson = new GsonBuilder().setPrettyPrinting().create(); // Skapa en Gson-instans med snygg formatering
     File file = new File(filename);
 
     try {
@@ -111,9 +115,9 @@ public class Preliminary implements TournementStage {
         file.createNewFile();
       }
 
-      // Skriv till filen
+      // Skriv JSON till filen
       try (FileWriter writer = new FileWriter(file)) {
-        writer.write("hej");
+        gson.toJson(this, writer);
         System.out.println("Turneringen sparad till " + filename);
       }
 
@@ -122,5 +126,4 @@ public class Preliminary implements TournementStage {
       e.printStackTrace();
     }
   }
-
 }

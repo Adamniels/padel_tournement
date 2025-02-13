@@ -10,6 +10,7 @@
 - [x] bygga litet bibliotek för att säkerställa input är korrekt
 
 - [ongoing] Kunna spara allting ifall man vill återuppta senare
-  - [ ] kanske kolla på att parsea själv och bygga ett litet json bibliotek???
+  - [ ] kankse bygga en egenklass som sköter att spara och återställa allting till en json fil
+        kan ta in tournement object
 - [ ] vill kunna köra 5 lag men verkar inte funka i nuläget, alla gånger iaf
 - [ ] göra det mer skalbart

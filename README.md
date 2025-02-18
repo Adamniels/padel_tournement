@@ -14,3 +14,4 @@
         kan ta in tournement object
 - [ ] vill kunna köra 5 lag men verkar inte funka i nuläget, alla gånger iaf
 - [ ] göra det mer skalbart
+- [ ] komma på ett sätt så att ett lag inte kan spela i båda sista matcherna och får jämna pauser
